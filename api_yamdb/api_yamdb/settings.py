@@ -14,7 +14,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -62,7 +61,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
-
 # Database
 
 DATABASES = {
@@ -78,7 +76,6 @@ DATABASES = {
         }
     }
 }
-
 
 # Password validation
 
@@ -97,7 +94,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 
 LANGUAGE_CODE = 'ru'
@@ -108,8 +104,6 @@ ATOMIC_REQUESTS = True
 USE_I18N = True
 
 USE_L10N = True
-
-
 
 # Static files (CSS, JavaScript, Images)
 
@@ -138,9 +132,7 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
-
 ADMIN_EMAIL = 'yambn@gmail.com'
-
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 
@@ -151,7 +143,6 @@ ROLE_CHOICES = (
     ('moderator', 'moderator'),
     ('admin', 'admin'),
 )
-
 
 USERNAME_MAX_LENGTH = 150
 EMAIL_MAX_LENGTH = 254

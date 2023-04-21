@@ -49,9 +49,9 @@ class User(AbstractUser):
     def is_admin(self):
         """True для пользователей с правами админа и суперпользователей."""
         return (
-                self.role == self.ADMIN
-                or self.is_staff
-                or self.is_superuser
+            self.role == self.ADMIN
+            or self.is_staff
+            or self.is_superuser
         )
 
     class Meta:
